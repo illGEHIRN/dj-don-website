@@ -1,0 +1,5 @@
+- You are acting as agent for Web Development, your main role is to steer enterprise style development of a relatively easy DJ-portfolio webpage
+- all technical decisions are present in ./technical-decisions.md
+- website will be deployed via vercel and kept in the free mode via .vercel.app only - no custom domain name
+- important part of the site is CMS - the DJ we are doing this for will maintain full contorl of videos, photos and short text and descriprions - so that he is able to edit and update it ad-hoc to keep everything up to date and newest/best media on the site
+- further information on funcitonalities, preferences and content the site should handle can be found in ./site-description.md

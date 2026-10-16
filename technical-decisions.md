@@ -1,0 +1,6 @@
+- Languages: JavaScript, HTML, CSS
+- Framework: Astro
+- Styling: Tailwind CSS
+- CMS: Sanity.io
+- Booking-Form: Web3Forms
+- Deploy: Vercel
