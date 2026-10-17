@@ -8,3 +8,5 @@ npm-debug.log*
 .env.production
 
 README-astro.md
+
+hints.md

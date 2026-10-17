@@ -4,3 +4,5 @@
 - CMS: Sanity.io
 - Booking-Form: Web3Forms
 - Deploy: Vercel
+- Font-for headers, stylized text, follows the Logo font): Fredoka / JA Jayagiri Sans
+- Font-for general text on the site: Inter

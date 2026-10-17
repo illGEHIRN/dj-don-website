@@ -1,0 +1,22 @@
+---
+
+import sketch from '../assets/svg/dj-website-sketch-whole-standalone-rotated.svg';
+
+const links = [
+    { href: '/', label: 'Domov' },
+    { href: '/about-me', label: 'O mne' },
+    { href: '/contact', label: 'Kontakt' },
+    { href: '/gallery', label: 'Galéria' }
+];
+---
+
+<header class="flex items-center justify-between px-8 py-4 border-b border-ink/10">
+    <a href="/" class="font-display text-5xl font-bold">DJ Don Džigi</a>
+    <nav class="flex gap-8">
+        {links.map((link) => (
+            <a href={link.href} class="text-ink/70 hover:text-accent text-xl">
+                    {link.label}
+            </a>
+        ))}
+    </nav>
+</header>

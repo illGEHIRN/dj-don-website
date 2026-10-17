@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@import "@fontsource-variable/fredoka";
+@import "@fontsource-variable/inter";
+
+@theme {
+    --font-sans: 'Inter Variable', sans-serif;
+    --font-display: 'Fredoka Variable', sans-serif;
+    --color-paper: #E8E7E6;
+    --color-ink: #111111;
+    --color-accent: #ff4425;
+}
