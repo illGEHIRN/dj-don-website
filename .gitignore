@@ -1,1 +1,10 @@
+dist/
+node_modules/
+.astro/
+npm-debug.log*
 
+
+.env
+.env.production
+
+README-astro.md
