@@ -3,20 +3,26 @@
 import Layout from "../layouts/Layout.astro";
 
 import profile from '../assets/dj-website-don-dzigi.jpg';
+import BookingForm from '../components/BookingForm.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
+  <div class="grid gap-2 md:grid-cols-2">
+      <section> 
+        <img
+              src={profile.src} 
+              alt="dj don dzigi"
+              class="mt-8 w-150" />
+      </section>
 
-
-  <section>
-    <img
-          src={profile.src} 
-          alt="dj don dzigi"
-          class="mt-8 w-150" />
-  </section>
+      <section>
+        <h2 class="font-sans text-4xl font-bold">Booking</h2>
+        <BookingForm />
+      </section>
+  </div>
 
   <p class="mt-4 px-4 text-ink/60">DJ pre svadby, stuzkove a sukromne ci verejne eventy</p>
 

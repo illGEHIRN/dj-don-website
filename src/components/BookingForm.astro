@@ -1,0 +1,64 @@
+---
+const accessKey = 'cbf17eb5-b9bb-4a49-b888-f4beff0e219b';
+
+const eventTypes = [
+        'Svadba',
+        'Stužková',
+        'Venček',
+        'Firemná akcia / teambuilding',
+        'Súkromná akcia',
+        'Verejná akcia',
+        'Iné',
+];
+
+---
+
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value={accessKey} />
+    
+    <label for="name">Meno</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="tel">Telefón</label>
+    <input
+        type="tel"
+        id="tel"
+        name="tel"
+        required
+        pattern="\+?[0-9 ]{9,16}"
+        title="Zadajte platné telefónne číslo (napr. vo formáte +421... alebo 09...)"
+    />
+
+    <!-- ADD CALENDAR FIELD WITH INTERACTIVE CALENDAR -->
+    <label for="date">Dátum</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="location">Miesto konania akcie</label>
+    <input type="text" id="location" name="location" required />
+
+    <!-- BUDEGET ??? -->
+
+    <fieldset>
+            <legend>Typ akcie <span class="text-ink/60">(nepovinné)</span></legend>
+
+            <div class="mt-2 flex flex-wrap gap-2">
+                    {eventTypes.map((type) => (
+                            <label class="cursor-pointer border border-ink/40 px-3 py-1
+                                        hover:border-ink
+                                        has-checked:bg-ink has-checked:text-paper
+                                        has-focus-visible:ring-2 has-focus-visible:ring-ink">
+                                    <input type="radio" name="event-type" value={type} class="sr-only" />
+                                    {type}
+                            </label>
+                    ))}
+            </div>
+    </fieldset>
+
+    <label for="message">Správa</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Odoslať</button>
+</form>
