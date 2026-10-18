@@ -1,4 +1,4 @@
-- Name of the DJ: "DJ Dzigi Dzi"
+- Name of the DJ: "DJ Don Dzigi"
 - Main website use-case: showcase the videos, photos, experiences from the shows/gigs, give ability to visitors to book an appointment or rather open the communication channel by filling out a form which the DJ/manager will receive and continue communication, showacase partners/frequent performers
 - type of gigs performed by DJ: weddings, "stuzkova" event for high school students, public events (like such organized by BSK or elsewhere), private events
 - what shouldnt be included: calendar with shown booked events - can create bad image as the DJ sometimes doesnt have many gigs, sometime does but when the period is weak it can seem as if he is unproffesional

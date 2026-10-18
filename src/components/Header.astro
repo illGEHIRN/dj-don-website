@@ -11,7 +11,18 @@ const links = [
 ---
 
 <header class="flex items-center justify-between px-8 py-4 border-b border-ink/10">
-    <a href="/" class="font-display text-5xl font-bold">DJ Don Džigi</a>
+    
+    <section class="relative">
+        <img
+            src={sketch.src}
+            alt=""
+            class="absolute -top-25 -left-21 w-100 opacity-90"
+        />
+    
+    <a href="/" class="relative font-display text-5xl font-bold">DJ Don Džigi</a>
+    
+    </section>
+    
     <nav class="flex gap-8">
         {links.map((link) => (
             <a href={link.href} class="text-ink/70 hover:text-accent text-xl">
